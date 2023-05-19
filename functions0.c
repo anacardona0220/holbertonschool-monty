@@ -72,7 +72,7 @@ void pint(stack_t **stack, unsigned int line_number)
 {
 	if(stack == NULL || *stack == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: usage: can't pint, stack empty\n", line_number);
+		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", line_number);
 		free(line);
 		stack_freer(*stack);
 		exit(EXIT_FAILURE);
