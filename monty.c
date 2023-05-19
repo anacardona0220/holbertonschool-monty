@@ -51,6 +51,10 @@ int main(int argc, char **argv)
 		{
 			var = 4;
 		}
+		else if (strcmp(command, "swap") == 0)
+		{
+			var = 5;
+		}
 		else
 		{
 			var = 0;
@@ -72,6 +76,10 @@ int main(int argc, char **argv)
 
 		case 4:
 			pop(&stack, line_number);
+			break;
+        
+		case 5:
+			swap(&stack, line_number);
 			break;
 
 		default:
