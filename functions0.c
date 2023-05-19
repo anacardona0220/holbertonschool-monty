@@ -78,7 +78,7 @@ void pint(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	print("%d\n", (*stack)->n);
+	printf("%d\n", (*stack)->n);
 }
 void nop(stack_t **stack, unsigned int line_number)
 {
