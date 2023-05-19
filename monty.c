@@ -62,6 +62,10 @@ int main(int argc, char **argv)
 			pall(&stack, line_number);
 			break;
 		
+		case 3:
+			pint(&stack, line_number);
+			break;
+
 		default:
 			dprintf(STDERR_FILENO, "L%u: unknown instruction %s\n", line_number, command);
 			exit(EXIT_FAILURE);
