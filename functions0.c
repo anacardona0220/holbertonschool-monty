@@ -91,6 +91,7 @@ void pop(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	temp_node = *stack;
+	*stack = (*stack)->next;
 	if(*stack != NULL)
 	(*stack)->prev = NULL;
 
