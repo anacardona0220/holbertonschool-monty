@@ -17,9 +17,9 @@ The interpreter follows the following requirements:
 
 * The interpreter runs the bytecodes line by line and stops if either:
 
-** It executed properly every line of the file.
-** It finds an error in the file.
-** An error occurred.
+1.  It executed properly every line of the file.
+2. It finds an error in the file.
+3. An error occurred.
 * If the interpreter can’t malloc anymore, it will print the error message "Error: malloc failed", followed by a new line, and exit with status EXIT_FAILURE.
 
 The interpreter uses malloc and free and is not allowed to use any other function from man malloc (realloc, calloc, …).
